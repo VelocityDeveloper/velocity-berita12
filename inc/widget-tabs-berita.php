@@ -1,20 +1,20 @@
 <?php
 
 /**
- * WIDGET TABS BERITA 9
+ * WIDGET TABS BERITA 12
  */
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class Tabs_Berita_9_Widget extends WP_Widget
+class Tabs_Berita_12_Widget extends WP_Widget
 {
     function __construct()
     {
         parent::__construct(
-            'tabs_berita_9_widget',
-            __('Tabs Berita 9', 'velocity'),
-            array('description' => __('Menampilkan tabs template berita 9', 'velocity'),)
+            'tabs_berita_12_widget',
+            __('Tabs Berita 12', 'velocity'),
+            array('description' => __('Menampilkan tabs template berita 12', 'velocity'),)
         );
     }
 
@@ -165,8 +165,8 @@ class Tabs_Berita_9_Widget extends WP_Widget
     }
 }
 
-function register_tabs_berita_9_widget()
+function register_tabs_berita_12_widget()
 {
-    register_widget('Tabs_Berita_9_Widget');
+    register_widget('Tabs_Berita_12_Widget');
 }
-add_action('widgets_init', 'register_tabs_berita_9_widget');
+add_action('widgets_init', 'register_tabs_berita_12_widget');
